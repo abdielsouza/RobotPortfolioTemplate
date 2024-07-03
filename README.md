@@ -1,5 +1,16 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+This project is a responsive portfolio web design TEMPLATE made by myself.
+
+# Tech Stack
+
+* NextJS (with Typescript)
+* TailwindCSS
+* ShadcnUI
+* lucide-react
+* react-icons
+* framer-motion
+
 ## Getting Started
 
 First, run the development server:

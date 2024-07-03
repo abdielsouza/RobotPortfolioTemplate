@@ -3,31 +3,53 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --main-color: yellow;
+  --filled-button-text-color: black;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  body {
+    font-family: monospace;
+    color: whitesmoke;
+    background: #22262f;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+@layer components {
+  .thematic-text {
+    @apply text-[var(--main-color)];
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .thematic-fill {
+    @apply fill-[var(--main-color)];
+  }
+
+  .thematic-border {
+    @apply border-[var(--main-color)];
+  }
+
+  .filled-button {
+    @apply text-[var(--filled-button-text-color)] bg-[var(--main-color)];
+  }
+
+  .outline-button {
+    @apply text-[var(--main-color)] border-[var(--main-color)] bg-transparent;
+  }
+
+  .h1 {
+    @apply text-2xl lg:text-3xl leading-loose font-extrabold;
+  }
+
+  .h2 {
+    @apply text-xl lg:text-2xl leading-loose font-bold;
+  }
+
+  .h3 {
+    @apply text-lg lg:text-xl leading-loose font-semibold;
+  }
+
+  .shadowed {
+    box-shadow: 0 0 5px var(--main-color),
+      0 0 3px var(--main-color);
   }
 }
