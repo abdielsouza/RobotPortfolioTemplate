@@ -21,10 +21,10 @@ export default function Home() {
           <div className="text-center lg:text-justify order-2 lg:order-none">
             <h2 className="text-lg italic">Software Developer</h2>
             <h1 className="h1 my-3">
-              Hello, I'm <br /> <span className="thematic-text">{yourName}</span>
+              Hello, I am <br /> <span className="thematic-text">{yourName}</span>
             </h1>
             <p className="max-w-[500px] mb-9">
-              I excel at crafting beautiful designs and digital experiences. I'm also
+              I excel at crafting beautiful designs and digital experiences. I am also
               proficient in various programming languages, web frameworks and AI
               technologies.
             </p>
